@@ -1,0 +1,63 @@
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+}
+
+.grid-container{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white !important;
+
+}
+
+.mines{
+    padding: 0;
+    border-radius: 5px;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #3699e3;
+    display: inline-block;
+    border: 1px solid white;
+    flex-wrap: wrap;
+    box-shadow:
+            inset 0 3px 2px rgba(255,255,255,.22),
+            inset 0 -3px 2px rgba(0,0,0,.17),
+            inset 0 20px 10px rgba(255,255,255,.12),
+            0 0 4px 1px rgba(0,0,0,.1),
+            0 3px 2px rgba(0,0,0,.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+
+    .grid-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mines{
+        width: 42px;
+        height: 42px;
+    }
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #18b818;
+    color: aliceblue;
+}
+
+button:disabled{
+    background-color: darkslategrey;
+}
+
